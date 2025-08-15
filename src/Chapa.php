@@ -22,12 +22,18 @@ class Chapa
     function __construct()
     {
 
-        $this->secretKey = env('CHAPA_SECRET_KEY');
         $this->baseUrl = 'https://api.chapa.co/v1';
 
     }
 
-    public static function generateReference(string $transactionPrefix = NULL)
+    public function setKey($key): static
+    {
+        $this->secretKey = $key;
+
+        return $this;
+    } 
+
+    public static function generateReference(?string $transactionPrefix = NULL)
     {
         if ($transactionPrefix) {
             return $transactionPrefix . '_' . uniqid(time());

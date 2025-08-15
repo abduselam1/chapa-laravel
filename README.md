@@ -7,6 +7,8 @@
 </div>
 </h1>
 
+This Repo forked from [Chapa official Laravel package](https://github.com/Chapa-Et/chapa-laravel) and modified to support multiple chapa account. You can use this package to integrate Chapa's payment gateway in your SaaS project.
+
 If your are doing a Laravel project and want to integrate Chapa's payment
 solution, this package would help big time.
 
@@ -26,11 +28,14 @@ You can check [this](https://github.com/Chapa-Et/sdk-examples/tree/master/chapa-
 
 ### Configuration
 
-Open your .env file and add your public key, secret keys, and other environment variables like this:
+Since we are using multiple chapa account there is no need to configure anything in .env file.
+But whenever you want to use a chapa account you need to set the api key using `setKey()` method.
 
+```php
+use Chapa\Chapa\Facades\Chapa::setKey('CHAPA-SECK-xxxxxxxxxxxxxxxxxxxxx-X')->initializePayment($data);
 ```
-CHAPA_SECRET_KEY=CHAPA-SECK-xxxxxxxxxxxxxxxxxxxxx-X
-```
+
+  > Storing the api key secure is your responsibility
 
 ## Features
 

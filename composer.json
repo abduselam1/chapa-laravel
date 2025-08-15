@@ -1,11 +1,11 @@
 {
-    "name": "chapa/chapa-laravel",
+    "name": "abduselam/chapa-laravel",
     "description": "A Laravel Package to Accept Payment through Chapa",
     "keywords": [
         "chapa",
         "chapa-laravel"
     ],
-    "homepage": "https://github.com/chapa-et/chapa-laravel",
+    "homepage": "https://github.com/abduselam1/chapa-laravel",
     "license": "MIT",
     "type": "library",
     "authors": [
@@ -23,6 +23,10 @@
             "name": "Semeredin Nurgeba",
             "email": "semernur11@gmail.com",
             "role": "Developer"
+        },
+        {
+            "name": "Abduselam Hafiz",
+            "email": "abduselamhafiz@gmail.com"
         }
     ],
     "require": {
